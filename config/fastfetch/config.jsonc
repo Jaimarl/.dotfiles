@@ -1,0 +1,71 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/logo.txt",
+    "color": {"1": "magenta"}
+  },
+  "display": {
+    "separator": "    ",
+    "color": {
+      "keys": "magenta",
+      "title": "magenta"
+    }
+  },
+  "modules": [
+    "title",
+    {
+      "type": "separator",
+      "string": "─"
+    },
+    {
+      "type": "os",
+      "key": "󰣇",
+      "format": "{pretty-name} {#90}[{arch}]"
+    },
+    {
+      "type": "kernel",
+      "key": "",
+      "format": "{sysname} {#90}[{release}]"
+    },
+    {
+      "type": "wm",
+      "key": "󱂬",
+      "format": "{pretty-name} {#90}[{version}] {#90}[{protocol-name}]"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖",
+      "format": "{pacman} {#90}[pacman]"
+    },
+    {
+      "type": "shell",
+      "key": "󰆍",
+      "format": "{pretty-name} {#90}[{version}] [{exe-path}]"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "",
+      "format": "{name} {#90}[{cores-physical}/{cores-logical}]"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮",
+      "format": "{vendor} {name} {#90}[{type}]"
+    },
+    {
+      "type": "memory",
+      "key": ""
+    },
+    "break",
+    {
+      "type": "uptime",
+      "key": ""
+    },
+    {
+    "type": "command",
+      "key": "",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo \"$days_difference days $(tput setaf 8)[$(date -d @$birth_install '+%d %b %Y')]$(tput sgr0)\""
+    }
+  ]
+}

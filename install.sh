@@ -62,7 +62,7 @@ sudo pacman -S --noconfirm waybar discord telegram-desktop fish btop nvtop\
     cava hyprshot hyprpicker  yazi rofi firefox code qbittorrent rofi mpv\
     eog noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-dejavu\
     ttf-liberation pavucontrol pipewire-pulse swaync hyprlock starship fzf\
-    trash-cli udisks2 imagemagick swww cpio meson cmake unzip
+    trash-cli udisks2 imagemagick swww cpio meson cmake unzip fastfetch
 
 # Пакеты AUR
 color_echo "green" "Установка пакетов (AUR)"
@@ -72,7 +72,6 @@ yay -S --noconfirm spotify equicord-installer-bin otf-geist-mono-nerd apple-font
 # Discord
 color_echo "green" "Установка Equicord"
 sudo Equilotl -install -location /opt/discord
-sudo Equilotl -install-openasar -location /opt/discord
 
 # Плагины Hyprland
 color_echo "green" "Обновление hyprpm"
@@ -104,3 +103,5 @@ for item in ~/.dotfiles/config/*; do
 
     ln -sf "$item" ~/.config/
 done
+
+ln -sf ~/.dotfiles/assets/background.png ~/.dotfiles/config/wlogout

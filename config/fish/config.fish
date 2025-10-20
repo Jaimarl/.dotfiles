@@ -5,6 +5,7 @@ set fish_greeting
 
 #--- Алиасы ---------------------------------------------------------
 alias wp ~/.dotfiles/scripts/set_wallpaper.sh
+alias ff "clear && fastfetch"
 
 
 #--- Функции --------------------------------------------------------
