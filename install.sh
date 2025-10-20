@@ -58,11 +58,11 @@ fi
 #--- Установка необходимых пакетов ----------------------------------
 # Пакеты Pacman
 color_echo "green" "Установка пакетов (Pacman)"
-sudo pacman -S --noconfirm waybar discord telegram-desktop kitty fish btop nvtop\
-    cava hyprshot hyprpicker  yazi rofi firefox code nvim qbittorrent rofi mpv\
+sudo pacman -S --noconfirm waybar discord telegram-desktop fish btop nvtop\
+    cava hyprshot hyprpicker  yazi rofi firefox code qbittorrent rofi mpv\
     eog noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra ttf-dejavu\
     ttf-liberation pavucontrol pipewire-pulse swaync hyprlock starship fzf\
-    trash-cli udisks2 imagemagick swww cpio meson cmake
+    trash-cli udisks2 imagemagick swww cpio meson cmake unzip
 
 # Пакеты AUR
 color_echo "green" "Установка пакетов (AUR)"
