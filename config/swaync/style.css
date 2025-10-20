@@ -1,0 +1,65 @@
+@import "colors.css";
+
+* {
+  font-family: "SF Pro Display";
+}
+
+
+.notification-background .notification {
+  margin-top: -1px;
+  margin-right: -7px;
+  margin-bottom: -6px;
+  box-shadow: none;
+  border-radius: 10;
+  border: 2px solid @surface0;
+  background: @base;
+}
+.notification-default-action:hover {
+  background: transparent;
+}
+
+
+.notification-background .close-button {
+  margin-right: 0;
+  margin-top: 6px;
+  padding: 0;
+  border-radius: -1;
+  color: @text;
+  background-color: @surface0;
+}
+.notification-background .close-button:hover {
+  color: @crust;
+  background-color: @red;
+}
+
+
+.notification-content .summary {
+  font-weight: 500;
+  color: @text;
+}
+.notification-content .body {
+  color: @subtext0;
+}
+
+
+.notification-alt-actions {
+  border-radius: 0;
+}
+.notification-alt-actions .notification-action {
+  margin: -4px;
+  border-radius: 0;
+}
+.notification-alt-actions .notification-action:hover {
+  margin: -4px;
+  background: @mauve;
+}
+.notification-alt-actions .notification-action .text-button {
+  font-weight: 500;
+  border-radius: 0;
+  color: @text;
+  background: @surface0;
+}
+.notification-alt-actions .notification-action .text-button:hover {
+  color: @crust;
+  background: @mauve;
+}

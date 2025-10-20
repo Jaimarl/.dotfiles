@@ -1,0 +1,26 @@
+@import "colors.css";
+
+* {
+	font-family: JetBrainsMono Nerd Font Propo;
+	font-size: 175;
+}
+
+window {
+	background-image: image(url("background.png"));
+	background-position: center;
+	background-size: cover;
+}
+
+button {
+	padding-bottom: 166px;
+    border-radius: 10px;
+	box-shadow: none;
+	margin: 5px;
+    color: @text;
+	background-color: @surface0;
+}
+
+button:focus, button:active {
+	color: @surface0;
+	background-color: @mauve;
+}

@@ -1,0 +1,13 @@
+
+{
+    "action" : "systemctl poweroff",
+    "text" : ""
+}
+{
+    "action" : "systemctl reboot",
+    "text" : ""
+}
+{
+    "action" : "loginctl terminate-user $USER",
+    "text" : ""
+}

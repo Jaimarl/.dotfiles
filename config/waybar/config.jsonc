@@ -1,0 +1,55 @@
+{
+    "layer": "top",
+    "position": "left",
+    "margin-left": 5,
+    "margin-top": 5,
+    "margin-bottom": 5,
+    "modules-left": ["custom/arch", "custom/separator", "hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["tray", "custom/separator", "group/hardware", "hyprland/language", "custom/separator", "clock"],
+
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+    "custom/separator": {
+        "format": " ",
+        "tooltip": false
+    },
+
+
+    "tray": {
+        "icon-size": 17,
+        "spacing": 7
+    },
+    "pulseaudio#2": {
+        "format": "{volume}",
+        "scroll-step": 2,
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "",
+        "format-muted": "",
+        "scroll-step": 2,
+        "tooltip": false
+    },
+    "group/hardware": {
+        "orientation": "vertical",
+        "drawer": {
+            "transition-duration": 300,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio#2"
+        ]
+    },
+    "hyprland/language": {
+        "format-en": "EN",
+        "format-ru": "RU"
+    },
+    "clock": {
+        "format": "{:%H\n%M}",
+        "tooltip": false
+    }
+}

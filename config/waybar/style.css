@@ -1,0 +1,94 @@
+@import "colors.css";
+
+* {
+    font-family: "SF Pro Display Mono";
+    font-weight: bold;
+}
+tooltip {
+    border: 1px solid @surface0;
+    background-color: @base;
+}
+tooltip label {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    color: @text;
+}
+#tray menu {
+    font-weight: 500;
+    color: @text;
+    border: 1px solid @surface0;
+    background-color: @base;
+}
+#tray menu label {
+    font-weight: 500;
+    color: @text;
+}
+ 
+window#waybar {
+    border-radius: 10px;
+    background: @mantle;
+}
+
+#custom-separator {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0;
+    min-height: 2px;
+    background-color: @surface1;
+}
+
+
+#custom-arch {
+    margin: 7px;
+    margin-right: 12px;
+    font-size: 22;
+    color: @mauve;
+}
+#workspaces {
+    margin: 7px;
+}
+#workspaces button {
+    font-size: 0;
+    margin: 3px;
+    padding: 0;
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 100px;
+    background-color: @overlay1;
+}
+#workspaces button.empty {
+    background-color: @surface0;
+}
+#workspaces button.urgent {
+    background-color: @red;
+}
+#workspaces button.visible {
+    background-color: @mauve;
+}
+#workspaces button.active {
+    background-color: @mauve;
+}
+
+
+#tray {
+    margin: 9px;
+}
+#pulseaudio {
+    margin-right: 7px;
+    margin-top: 7px;
+    color: @text;
+}
+#pulseaudio.2 {
+    margin-right: 0;
+}
+#language {
+    margin: 7px;
+    margin-top: 3px;
+    font-size: 15;
+    color: @text;
+}
+#clock {
+    margin: 7px;
+    font-size: 18;
+    color: @text;
+}

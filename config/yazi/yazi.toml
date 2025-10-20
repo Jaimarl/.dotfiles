@@ -1,0 +1,24 @@
+[mgr]
+show_hidden = true
+
+
+[opener]
+dir = [
+	{ run = ' ' },
+]
+media = [
+	{ run = 'mpv "$@"' },
+]
+image = [
+    { run = 'eog "$@"' }
+]
+edit = [
+	{ run = 'code "$@"' },
+]
+
+
+[open]
+prepend_rules = [ 
+    { mime = "inode/directory", use = "dir" },
+    { mime = "image/*", use = "image" },
+]
