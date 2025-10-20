@@ -81,6 +81,12 @@ hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
 hyprpm enable split-monitor-workspaces
 hyprpm reload
 
+# Сервис эквалайзера hyprlock
+systemctl --user daemon-reexec
+systemctl --user daemon-reload
+systemctl --user enable --now cava-to-file.service
+systemctl --user start --now cava-to-file.service
+
 # GTK тема и иконки
 color_echo "green" "Установка темы GTK"
 git clone https://github.com/vinceliuice/Colloid-icon-theme.git

@@ -1,0 +1,10 @@
+[Unit]
+Description=CAVA to RAM file for Hyprlock visualizer
+After=default.target
+
+[Service]
+ExecStart=%h/.config/hypr/scripts/cava_to_file.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
